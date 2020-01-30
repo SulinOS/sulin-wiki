@@ -1,5 +1,5 @@
 # autotools
-```
+```python
 def configure(parameters=''):
     """configure source with given parameters = "--with-nls --with-libusb --with-something-usefull"""
 def rawConfigure(parameters=''):
@@ -28,7 +28,7 @@ def autoheader(parameters=''):
     """generates templates for configure"""
 ```
 # cmaketools
-```
+```python
 def configure(parameters='', installPrefix='/{}'.format(get.defaultprefixDIR()), sourceDir='.'):
     """configure source with given cmake parameters = "-DCMAKE_BUILD_TYPE -DCMAKE_CXX_FLAGS ... " """
 def make(parameters=''):
@@ -40,7 +40,7 @@ def rawInstall(parameters='', argument='install'):
     """install source into install directory with given parameters = PREFIX=get.installDIR()"""
 ```
 # get
-```
+```python
 def curDIR():
     """returns current work directory's path"""
 def curKERNEL():
@@ -98,7 +98,7 @@ def F77():
 def GCJ():
 ```
 # inarytools
-```
+```python
 def executable_insinto(destinationDirectory, *sourceFiles):
     """insert a executable file into destinationDirectory"""
 def readable_insinto(destinationDirectory, *sourceFiles):
@@ -145,7 +145,7 @@ def removeDir(destinationDirectory):
     """removes destinationDirectory and its subtrees"""
 ```
 # javamodules
-```
+```python
 def compile(argument='', parameters='', build_tool='ant'):
     """compile source with given build tool and related parameters"""
 def installExe(exe='', java_args='', exe_args='', dest_dir=''):
@@ -169,14 +169,14 @@ def run(argument='', parameters='', build_tool='ant'):
     """run build tool with given parameters"""
 ```
 # kde
-```
+```python
 def configure(parameters='', installPrefix=prefix, sourceDir='..'):
     """ parameters -DLIB_INSTALL_DIR="hede" -DSOMETHING_USEFUL=1"""
 def make(parameters=''):
 def install(parameters='', argument='install'):
 ```
 # kerneltools
-```
+```python
 def getKernelVersion(flavour=None):
 def configure():
 def dumpVersion():
@@ -187,7 +187,7 @@ def installHeaders(extraHeaders=None):
 def installLibcHeaders(excludes=None):
 ```
 # libtool
-```
+```python
 def preplib(sourceDirectory='/usr/lib'):
 def gnuconfig_update():
     """ copy newest config.* onto source\'s """
@@ -195,7 +195,7 @@ def libtoolize(parameters=''):
 def gen_usr_ldscript(dynamicLib):
 ```
 # mesontools
-```
+```python
 def fixpc():
     """ fix .pc files in installDIR()/usr/lib32/pkgconfig"""
 def meson_configure(parameters=""):
@@ -205,7 +205,7 @@ def ninja_install(parameters=""):
 def ninja_check():
 ```
 # perlmodules
-```
+```python
 def configure(parameters=''):
     """configure source with given parameters."""
 def make(parameters=''):
@@ -220,7 +220,7 @@ def removeEmptydirs(d):
     """ remove empty dirs from perl package if exists after deletion .pod and .packlist files """
 ```
 # pkgconfig
-```
+```python
 def getVariableForLibrary(library, variable):
     """Returns a specific variable provided in the library .pc file"""
 def getLibraryVersion(library):
@@ -237,7 +237,7 @@ def libraryExists(library):
     """Returns True if the library provides a .pc file."""
 ```
 # pythonmodules
-```
+```python
 def configure(parameters='', pyVer=''):
     """does python setup.py configure"""
 def compile(parameters='', pyVer=''):
@@ -250,13 +250,13 @@ def fixCompiledPy(lookInto='/usr/lib/{}/'.format(get.curPYTHON())):
     """ cleans *.py[co] from packages """
 ```
 # qt
-```
+```python
 def configure(projectfile='', parameters='', installPrefix=prefix):
 def make(parameters=''):
 def install(parameters='', argument='install'):
 ```
 # rubymodules
-```
+```python
 def get_config(config):
 def get_ruby_version():
 def get_rubylibdir():
@@ -277,12 +277,12 @@ def run(parameters=''):
     """executes parameters with ruby"""
 ```
 # scons
-```
+```python
 def make(parameters=''):
 def install(parameters='install', prefix=get.installDIR(), argument='prefix'):
 ```
 # shelltools
-```
+```python
 def can_access_file(filePath):
     """test the existence of file"""
 def can_access_directory(destinationDirectory):
@@ -332,7 +332,7 @@ def system(command):
     """command an list but should be an str"""
 ```
 # textlivemodules
-```
+```python
 def compile(parameters=''):
     """compiling texlive packages"""
 def install(parameters=''):
