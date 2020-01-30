@@ -194,3 +194,168 @@ def gnuconfig_update():
 def libtoolize(parameters=''):
 def gen_usr_ldscript(dynamicLib):
 ```
+# mesontools
+```
+def fixpc():
+    """ fix .pc files in installDIR()/usr/lib32/pkgconfig"""
+def meson_configure(parameters=""):
+def cmake_configure(parameters=""):
+def ninja_build(parameters=""):
+def ninja_install(parameters=""):
+def ninja_check():
+```
+# perlmodules
+```
+def configure(parameters=''):
+    """configure source with given parameters."""
+def make(parameters=''):
+    """make source with given parameters."""
+def install(parameters='install'):
+    """install source with given parameters."""
+def removePacklist(path='usr/lib/perl5/'):
+    """ cleans .packlist file from perl packages """
+def removePodfiles(path='usr/lib/perl5/'):
+    """ cleans *.pod files from perl packages """
+def removeEmptydirs(d):
+    """ remove empty dirs from perl package if exists after deletion .pod and .packlist files """
+```
+# pkgconfig
+```
+def getVariableForLibrary(library, variable):
+    """Returns a specific variable provided in the library .pc file"""
+def getLibraryVersion(library):
+    """Returns the module version provided in the library .pc file."""
+def getLibraryCFLAGS(library):
+    """Returns compiler flags for compiling with this library.
+    Ex: -I/usr/include/nss"""
+def getLibraryLIBADD(library):
+    """Returns linker flags for linking with this library.
+    Ex: -lpng14"""
+def runManualCommand(*args):
+    """Runs the given command and returns the output."""
+def libraryExists(library):
+    """Returns True if the library provides a .pc file."""
+```
+#pythonmodules
+```
+def configure(parameters='', pyVer=''):
+    """does python setup.py configure"""
+def compile(parameters='', pyVer=''):
+    """compile source with given parameters."""
+def install(parameters='', pyVer=''):
+    """does python setup.py install"""
+def run(parameters='', pyVer=''):
+    """executes parameters with python"""
+def fixCompiledPy(lookInto='/usr/lib/{}/'.format(get.curPYTHON())):
+    """ cleans *.py[co] from packages """
+```
+# qt
+```
+def configure(projectfile='', parameters='', installPrefix=prefix):
+def make(parameters=''):
+def install(parameters='', argument='install'):
+```
+# rubymodules
+```
+def get_config(config):
+def get_ruby_version():
+def get_rubylibdir():
+def get_sitedir():
+def get_gemdir():
+def get_ruby_install_name():
+def get_gemhome():
+def get_sitelibdir():
+def generate_gemname():
+def auto_dodoc():
+def install(parameters=''):
+    """does ruby setup.rb install"""
+def rake_install(parameters=''):
+def gem_build(parameters=''):
+def gem_install(parameters=''):
+    """Make installation from GemFile"""
+def run(parameters=''):
+    """executes parameters with ruby"""
+```
+# scons
+```
+def make(parameters=''):
+def install(parameters='install', prefix=get.installDIR(), argument='prefix'):
+```
+# shelltools
+```
+def can_access_file(filePath):
+    """test the existence of file"""
+def can_access_directory(destinationDirectory):
+    """test readability, writability and executablility of directory"""
+def makedirs(destinationDirectory):
+    """recursive directory creation function"""
+def echo(destionationFile, content):
+def chmod(filePath, mode=0o755):
+    """change the mode of filePath to the mode"""
+def chown(filePath, uid='root', gid='root'):
+    """change the owner and group id of filePath to uid and gid"""
+def sym(source, destination):
+    """creates symbolic link"""
+def unlink(pattern):
+    """remove the file path"""
+def unlinkDir(sourceDirectory):
+    """delete an entire directory tree"""
+def move(source, destination):
+    """recursively move a "source" file or directory to "destination\""""
+def copy(source, destination, sym=True):
+    """recursively copy a "source" file or directory to "destination\" """
+def copytree(source, destination, sym=True):
+    """recursively copy an entire directory tree rooted at source"""
+def touch(filePath):
+    """changes the access time of the 'filePath', or creates it if it does not exist"""
+def cd(directoryName=''):
+    """change directory"""
+def ls(source):
+    """listdir"""
+def export(key, value):
+    """export environ variable"""
+def isLink(filePath):
+    """return True if filePath refers to a symbolic link"""
+def isFile(filePath):
+    """return True if filePath is an existing regular file"""
+def isDirectory(filePath):
+    """Return True if filePath is an existing directory"""
+def isEmpty(filePath):
+    """Return True if filePath is an empty file"""
+def realPath(filePath):
+    """return the canonical path of the specified filename, eliminating any symbolic links encountered in the path"""
+def baseName(filePath):
+    """return the base name of pathname filePath"""
+def dirName(filePath):
+    """return the directory name of pathname path"""
+def system(command):
+    """command an list but should be an str"""
+```
+# textlivemodules
+```
+def compile(parameters=''):
+    """compiling texlive packages"""
+def install(parameters=''):
+    """Installing texlive packages"""
+def createSymlinksFormat2Engines():
+    """Create symlinks from format to engines"""
+def installDocFiles():
+    """Installing docs"""
+def installTexmfFiles():
+    """Installing texmf, texmf-dist, tlpkg, texmf-var"""
+def installConfigFiles():
+    """Installing config files"""
+def handleConfigFiles():
+    """Handling config files"""
+def addFormat(parameters):
+    """Add format files"""
+def moveSources():
+def buildFormatFiles():
+    """Build format files"""
+def addLanguageDat(parameter):
+    """Create language.*.dat files"""
+def addLanguageDef(parameter):
+    """Create language.*.def files"""
+def generateConfigFiles():
+    """Generate config files"""
+```
