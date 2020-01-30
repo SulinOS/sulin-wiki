@@ -236,7 +236,7 @@ def runManualCommand(*args):
 def libraryExists(library):
     """Returns True if the library provides a .pc file."""
 ```
-#pythonmodules
+# pythonmodules
 ```
 def configure(parameters='', pyVer=''):
     """does python setup.py configure"""
