@@ -175,3 +175,22 @@ def configure(parameters='', installPrefix=prefix, sourceDir='..'):
 def make(parameters=''):
 def install(parameters='', argument='install'):
 ```
+# kerneltools
+```
+def getKernelVersion(flavour=None):
+def configure():
+def dumpVersion():
+    """ Writes the specific kernel version into /etc/kernel"""
+def build(debugSymbols=False):
+def install():
+def installHeaders(extraHeaders=None):
+def installLibcHeaders(excludes=None):
+```
+# libtool
+```
+def preplib(sourceDirectory='/usr/lib'):
+def gnuconfig_update():
+    """ copy newest config.* onto source\'s """
+def libtoolize(parameters=''):
+def gen_usr_ldscript(dynamicLib):
+```
