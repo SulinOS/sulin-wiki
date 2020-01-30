@@ -97,3 +97,81 @@ def RANLIB():
 def F77():
 def GCJ():
 ```
+# inarytools
+```
+def executable_insinto(destinationDirectory, *sourceFiles):
+    """insert a executable file into destinationDirectory"""
+def readable_insinto(destinationDirectory, *sourceFiles):
+    """inserts file list into destinationDirectory"""
+def lib_insinto(sourceFile, destinationDirectory, permission=644):
+    """inserts a library fileinto destinationDirectory with given permission"""
+def dobin(sourceFile, destinationDirectory='/usr/bin'):
+    """insert a executable file into /bin or /usr/bin"""
+def dopixmaps(sourceFile, destinationDirectory='/usr/share/pixmaps'):
+    """insert a data file into /usr/share/pixmaps"""
+def dodir(destinationDirectory):
+    """creates a directory tree"""
+def dodoc(*sourceFiles, **kw):
+    """inserts the files in the list of files into /usr/share/doc/PACKAGE"""
+def dohtml(*sourceFiles, **kw):
+    """inserts the files in the list of files into /usr/share/doc/PACKAGE/html"""
+def doinfo(*sourceFiles):
+    """inserts the into files in the list of files into /usr/share/info"""
+def dolib(sourceFile, destinationDirectory='/usr/lib', mode=755):
+    """insert the library into /usr/lib"""
+def doman(*sourceFiles, pageDirectory=None):
+    """inserts the man pages in the list of files into /usr/share/man/"""
+def domo(sourceFile, locale, destinationFile, localeDirPrefix='/usr/share/locale'):
+    """inserts the mo files in the list of files into /usr/share/locale/LOCALE/LC_MESSAGES"""
+def domove(sourceFile, destination, destinationFile=''):
+    """moves sourceFile/Directory into destinationFile/Directory"""
+def rename(sourceFile, destinationFile):
+    """ renames sourceFile as destinationFile"""
+def dosed(sources, findPattern, replacePattern='', filePattern='', deleteLine=False, level=-1):
+    """replaces patterns in sources"""
+def dosbin(sourceFile, destinationDirectory='/usr/sbin'):
+    """insert a executable file into /sbin or /usr/sbin"""
+def dosym(sourceFile, destinationFile):
+    """creates soft link between sourceFile and destinationFile"""
+def insinto(destinationDirectory, sourceFile, destinationFile='', sym=True):
+    """insert a sourceFile into destinationDirectory as a destinationFile with same uid/guid/permissions"""
+def newdoc(sourceFile, destinationFile):
+    """inserts a sourceFile into /usr/share/doc/PACKAGE/ directory as a destinationFile"""
+def newman(sourceFile, destinationFile):
+    """inserts a sourceFile into /usr/share/man/manPREFIX/ directory as a destinationFile"""
+def remove(sourceFile):
+    """removes sourceFile"""
+def removeDir(destinationDirectory):
+    """removes destinationDirectory and its subtrees"""
+```
+# javamodules
+```
+def compile(argument='', parameters='', build_tool='ant'):
+    """compile source with given build tool and related parameters"""
+def installExe(exe='', java_args='', exe_args='', dest_dir=''):
+    """install executable jar to specified location and get jar prepared to
+    execute with given arguments.
+
+    exe:        Path in work dir to executable jar
+    java_args:  Arguments passed to jvm
+    exe_args:   Arguments passed to executable jar
+    dest_dir:   Installation dir of executable jar"""
+def installLib(src='*.jar', dest='/usr/share/java'):
+    """install compilation output that is mix of the utility classes as
+    in jars or meta/data files to specified locations.
+
+    src:    Source file pattern to be installed
+    dest:   Destination dir where the source files to be installed
+    """
+def dojavadoc(*source_files, **kw):
+    """generate & copy javadoc files to /usr/share/doc/src_name recursively"""
+def run(argument='', parameters='', build_tool='ant'):
+    """run build tool with given parameters"""
+```
+# kde
+```
+def configure(parameters='', installPrefix=prefix, sourceDir='..'):
+    """ parameters -DLIB_INSTALL_DIR="hede" -DSOMETHING_USEFUL=1"""
+def make(parameters=''):
+def install(parameters='', argument='install'):
+```
