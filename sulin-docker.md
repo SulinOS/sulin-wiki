@@ -1,5 +1,5 @@
 # Run docker daemon (as root)
-`nohup dockerd > /var/log/dockerd`
+`nohup dockerd > /var/log/dockerd &`
 
 # Pull docker image
 |name|type|
