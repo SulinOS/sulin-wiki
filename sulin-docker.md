@@ -1,3 +1,6 @@
+# Run docker daemon (as root)
+`nohup dockerd > /var/log/dockerd`
+
 # Pull docker image
 |name|type|
 |--|--|
@@ -5,8 +8,6 @@
 |devel|docker pull sulinos/sulin_development:devel|
 |base|docker pull sulinos/sulin_development:base|
 
-# Run docker daemon (as root)
-`dockerd`
 
-# Run shell in docker image (as root or docker user)
+# Run shell in docker image
 `docker run -it sulinos/sulin_development:TYPE /bin/bash`
