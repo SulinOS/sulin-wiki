@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SDDM &mdash; SulinOS Wiki</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within SulinOS Wiki"
+          href="../../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="StartDM" href="startdm.html" />
+    <link rel="prev" title="LightDM" href="ligthdm.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> Wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2020
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">X11 Packages</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Login Managers</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ligthdm.html">LightDM</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SDDM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installation"><strong>Installation</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#openrc"><strong>OpenRC</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invoking"><strong>Invoking</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging"><strong>Debugging</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#troubleshooting"><strong>TroubleShooting</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="startdm.html">StartDM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">X11 Packages</a> &raquo;</li>
+        
+          <li><a href="index.html">Login Managers</a> &raquo;</li>
+        
+      <li>SDDM</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sddm">
+<h1>SDDM<a class="headerlink" href="#sddm" title="Permalink to this headline">¶</a></h1>
+<p>Simple Desktop Display Manager is the display manager for X11 and Wayland window
+systems. SDDM was written when kde version 5 published from scratch  in C ++ 11 and supports theme via QML.
+SDDM is free and open source software that is subject to the GNU General Public License version two or later.</p>
+<div class="section" id="installation">
+<h2><strong>Installation</strong><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>SDDM can be installed via master repositories of SulinOS</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sh ~# inary it sddm
+</pre></div>
+</div>
+<p>This installation adds system sddm user as mentioned on <a class="reference external" href="https://github.com/sddm/sddm/wiki">SDDM Documentation</a>.</p>
+</div>
+<div class="section" id="openrc">
+<h2><strong>OpenRC</strong><a class="headerlink" href="#openrc" title="Permalink to this headline">¶</a></h2>
+<p>For staring lightdm as a display manager you need to use startdm server <a class="reference internal" href="startdm.html"><span class="doc">StartDM</span></a></p>
+</div>
+<div class="section" id="invoking">
+<h2><strong>Invoking</strong><a class="headerlink" href="#invoking" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="configuration">
+<h3><strong>Configuration</strong><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>This part a copy of Gentoo wiki pages.
+As mentioned Gentoo Wiki:
+SDDM has two configuration files: the package installed /usr/share/sddm/sddm.conf.d/00default.conf
+and /etc/sddm.conf which is used to override specific options. The second is not created by the package.
+KDE Plasma writes user changed options to /etc/sddm.conf. Both files have the same format. See comments in the file and man 5 sddm.conf for details on available options.</p>
+<div class="section" id="keymap">
+<h4>Keymap<a class="headerlink" href="#keymap" title="Permalink to this headline">¶</a></h4>
+<p>To select the correct keymap on the login screen, add following lines to the /etc/sddm.conf file:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`/etc/sddm.conf`</span></code>
+.. code-block:: shell</p>
+<blockquote>
+<div><p>[X11]
+DisplayCommand=/etc/sddm/scripts/Xsetup</p>
+</div></blockquote>
+<p>This file is not created automatically when the package is installed so you’ll need to create it if you haven’t done so already.</p>
+<p>Next create the directory <cite>/etc/sddm/scripts</cite></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root <span class="c1">#mkdir -p /etc/sddm/scripts</span>
+</pre></div>
+</div>
+<p>and the file <cite>/etc/sddm/scripts/Xsetup</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">`/etc/sddm/scripts/Xsetup`</span></code>
+.. code-block:: shell</p>
+<blockquote>
+<div><p>setxkbmap gb,us</p>
+</div></blockquote>
+<p>the first country code is the default. Finally set execute permissions on the file /etc/sddm/scripts/Xsetup.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root <span class="c1">#chmod a+x /etc/sddm/scripts/Xsetup</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2><strong>Debugging</strong><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="troubleshooting">
+<h2><strong>TroubleShooting</strong><a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>Get the latest news at <a class="reference internal" href="#sddm">SDDM</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="startdm.html" class="btn btn-neutral float-right" title="StartDM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ligthdm.html" class="btn btn-neutral float-left" title="LightDM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2016-2020 SulinOS Community and Zaryob
+      <span class="lastupdated">
+        Last updated on Jul 06, 2020.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Wiki</ShortName>
+  <Description>Search SulinOS Wiki</Description>
+  <InputEncoding>utf-8</InputEncoding>
+  <Url type="text/html" method="get"
+       template="true/search.html?q={searchTerms}"/>
+  <LongName>SulinOS Wiki</LongName>
+  <Image height="16" width="16" type="image/x-icon">true/_static/favicon.ico</Image>
+  
+</OpenSearchDescription>
