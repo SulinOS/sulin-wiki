@@ -7,7 +7,7 @@
 
 # -- Project information -----------------------------------------------------
 
-import sphinx_theme
+import sphinx_rtd_theme as sphinx_theme
 import sys
 import os
 
@@ -67,7 +67,7 @@ today_fmt = '%B %d, %Y'
 
 # A list of glob-style patterns that should be excluded when looking
 # for source files.
-exclude_patterns = ['modules']
+exclude_patterns = ['modules', "README.md"]
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -106,7 +106,7 @@ rst_epilog = """
 # a list of builtin themes.
 #
 
-html_theme = 'neo_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_theme.get_html_theme_path()]
 
 #html_theme_path = ['../_themes']

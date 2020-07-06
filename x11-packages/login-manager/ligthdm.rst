@@ -22,6 +22,7 @@ LightDM can be installed via master repositories of SulinOS
 Vanilla installation can come with some errors:
 
 .. code-block:: shell
+
           DEBUG: Failed to load session file /usr/share/xsessions/ubuntu.desktop
           DEBUG: Session 1800: Sending SIGTERM
           Started seesion 2020 with service 'lightdm', username 'lightdm'
@@ -38,7 +39,9 @@ has included in our repositories. It is possible to use LightDM without a greete
 with changing config file, but only if an automatic login is configured
 
 ```/etc/lightdm/lightdm.conf```
-.. code-block:: shell
+
+.. code-block::
+
           [Seat:*]
           ...
           # greeter-session=lightdm-gtk-greeter

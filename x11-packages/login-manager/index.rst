@@ -11,6 +11,7 @@ There will be many detailed uses and hints for login managers and startdm servic
 
 .. toctree::
     :maxdepth: 0
+    
     ligthdm.rst
     sddm.rst
     startdm.rst
