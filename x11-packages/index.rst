@@ -12,3 +12,12 @@ There will be many detailed uses and hints for x11 packages, login managers, des
     :maxdepth: 1
 
     login-manager/index.rst
+
+Installing X11 component
+========================
+
+.. code-block:: shell
+
+        $sh # inary it -c x11
+        
+        
