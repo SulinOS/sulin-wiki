@@ -24,8 +24,16 @@ For full installation `inary it -c desktop.xfce`
 ------------
 - run *startxfce4* start a new xfce session. You can add **.xinitrc** file
 
-**Configuration**
-^^^^^^^^^^^^^^^^^
+
+**Resetting to defaults**
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Try running: 
+
+.. code-block::
+
+mv ~/.config/xfce4-session/ ~/.config/xfce4-session-bak
+mv ~/.config/xfce4/ ~/.config/xfce4-bakThese
+
 
 **Debugging**
 -------------
