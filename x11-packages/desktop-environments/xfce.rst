@@ -29,7 +29,8 @@ For full installation `inary it -c desktop.xfce`
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 Try running: 
 
-::
+.. code-block::
+
         mv ~/.config/xfce4-session/ ~/.config/xfce4-session-bak
         mv ~/.config/xfce4/ ~/.config/xfce4-bakThese
 
