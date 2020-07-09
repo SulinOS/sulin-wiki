@@ -35,8 +35,6 @@ Try running:
         mv ~/.config/xfce4/ ~/.config/xfce4-bakThese
 
 
-**Debugging**
+**Building**
 -------------
-
-**TroubleShooting**
--------------------
+Building documentation avaiable in official page: https://docs.xfce.org/xfce/building
