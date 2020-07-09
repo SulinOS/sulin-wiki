@@ -38,6 +38,7 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.intersphinx',
               'sphinx.ext.todo',
               'sphinx.ext.githubpages',
+              'rst2pdf.pdfbuilder',
               ]
 # Later on, add 'sphinx.ext.viewcode' to the list if you want to have
 # colorized code generated too for references.
